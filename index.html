@@ -107,6 +107,36 @@
     table { border-collapse: collapse; width: 100%; }
     th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; font-family: 'Poppins', sans-serif; }
     th { background: #f9f6f0; font-weight: 600; }
+    
+    /* CSS BUTANG MUZIK TERAPUNG */
+    .music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid var(--champagne);
+      box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: var(--dark-gold);
+    }
+    .music-btn:hover {
+      transform: scale(1.1);
+      background: var(--soft-beige);
+    }
+    .spin-animation {
+      animation: spin 3s linear infinite;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
   </style>
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/935a53bc2e11fb8d.data_sdk.js" type="text/javascript" integrity="sha512-qr2oyPnEys1WebcOABaRh6hG77r5PWpqeWW6JTKbRJqly/INsfBi31CVNlTmHqjgeLpkVmmHZJUdxSx/32tOFQ=="></script>
@@ -134,10 +164,13 @@
    </div>
    <div id="toast-container"></div>
    
-   <!-- ELEMEN AUDIO TERSEMBUNYI -->
+   <!-- ELEMEN AUDIO & BUTANG MUZIK TERAPUNG -->
    <audio id="bg-music" loop preload="auto">
        <source src="lagu.mp3" type="audio/mpeg">
    </audio>
+   <button id="music-toggle-btn" class="music-btn" onclick="toggleMusic()" title="Main/Henti Muzik">
+       <i id="music-icon" data-lucide="music" style="width:20px;height:20px;"></i>
+   </button>
 
    <div id="page-invitation" class="w-full min-h-full py-8 px-4">
     <div class="max-w-lg mx-auto">
@@ -926,13 +959,38 @@
       } catch (e) { console.error('Notification load error:', e); }
     }
 
- function closeNotification() { 
+ let isMusicPlaying = false;
+
+    function toggleMusic() {
+        const bgMusic = document.getElementById('bg-music');
+        const musicIcon = document.getElementById('music-icon');
+        
+        if (isMusicPlaying) {
+            bgMusic.pause();
+            if (musicIcon) musicIcon.classList.remove('spin-animation');
+            isMusicPlaying = false;
+        } else {
+            bgMusic.play().then(() => {
+                if (musicIcon) musicIcon.classList.add('spin-animation');
+                isMusicPlaying = true;
+            }).catch(err => {
+                console.log("Autoplay disekat:", err);
+            });
+        }
+    }
+
+    function closeNotification() { 
         document.getElementById('notification-modal').style.display = 'none'; 
         
         // Logik: Mainkan lagu latar belakang sebaik sahaja butang OK ditekan
         const bgMusic = document.getElementById('bg-music');
+        const musicIcon = document.getElementById('music-icon');
+        
         if (bgMusic) {
-            bgMusic.play().catch(err => {
+            bgMusic.play().then(() => {
+                isMusicPlaying = true;
+                if (musicIcon) musicIcon.classList.add('spin-animation'); // Ikon mula berpusing
+            }).catch(err => {
                 console.log("Autoplay disekat oleh pelayar web:", err);
             });
         }
