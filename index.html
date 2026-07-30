@@ -903,16 +903,25 @@
       setTimeout(() => toast.remove(), 4000);
     }
 
-    function handleHeaderMapButton() {
+   function handleHeaderMapButton() {
       let mapUrl = 'https://maps.app.goo.gl/ajSbbnbw3C6FWgkD9?g_st=atm';
       if (headerData.peta && headerData.peta.trim()) { mapUrl = headerData.peta; }
-      copyToClipboard(mapUrl, '✓ Pautan peta disalin.');
+      window.open(mapUrl, '_blank');
     }
 
     function handleHeaderContactButton(noWhatsapp) {
       if (noWhatsapp && noWhatsapp.trim()) {
-        const cleanNumber = noWhatsapp.replace(/\D/g, '');
-        if (cleanNumber.length > 0) { const waUrl = `https://wa.me/${cleanNumber}`; copyToClipboard(waUrl, '✓ Pautan WhatsApp disalin.'); return; }
+        // Jika nombor bermula dengan 0, tukar kepada 60 (kod negara Malaysia)
+        let cleanNumber = noWhatsapp.replace(/\D/g, '');
+        if (cleanNumber.startsWith('0')) {
+            cleanNumber = '60' + cleanNumber.substring(1);
+        }
+        
+        if (cleanNumber.length > 0) { 
+          const waUrl = `https://wa.me/${cleanNumber}`; 
+          window.open(waUrl, '_blank'); 
+          return; 
+        }
       }
       showToast('Nombor WhatsApp tidak tersedia.', 'error');
     }
