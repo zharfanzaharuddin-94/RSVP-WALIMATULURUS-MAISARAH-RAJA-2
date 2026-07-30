@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="ms" class="h-full">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260730-03-db92621","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,0","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHO2EIdDP0,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YADy3sAhvXQ,0","Oleo Script":"YACgEQQ14jI,0","Playfair Display":"YAFdJhem5V8,1","Poppins":"YAE5fPSY9qM,0","Press Start 2P":"YAFyGr-8pmQ,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/a27874207e105461.telemetry_sdk.js" integrity="sha512-wgI5N9F7oA2h3vH+benMYIv4wGqTct4nKWakqgvfgRyBLmfYq8q/fi6gkfWKd2hMsyN+VQ/qOAOpxybwkcoxlA=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walimatul Urus</title>
+  <script src="/_sdk/58fe3688b755eeb3.element_sdk.js" integrity="sha512-OMjvInGwXrNzr3Wzjbb1g4+6UqSJ6JZQ8iyW9B1TgkUVKtQQya+sYfHVDL3seI5VxPiNT5nwy1K0LUByUi9ETQ=="></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Great+Vibes&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Poppins:wght@400;500;600;700&amp;family=Traditional+Arabic&amp;family=EB+Garamond:ital,wght@1,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --champagne: #C9A96E;
+      --rose-gold: #B76E79;
+      --ivory: #FFFFF0;
+      --soft-beige: #F5F0E8;
+      --dark-gold: #8B6914;
+    }
+    html { height: 100%; }
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--soft-beige);
+      height: 100%;
+      overflow-y: auto;
+    }
+    .font-great-vibes { font-family: 'Great Vibes', cursive; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    .font-arabic { font-family: 'Traditional Arabic', Arial, sans-serif; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(201, 169, 110, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(201, 169, 110, 0.15);
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, #C9A96E, #D4AF37);
+      color: white;
+      border: none;
+      transition: all 0.3s;
+    }
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #B8963E, #C9A96E);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(201, 169, 110, 0.4);
+    }
+    .countdown-box {
+      background: rgba(255,255,255,0.9);
+      border: 2px solid var(--champagne);
+      border-radius: 12px;
+      min-width: 70px;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .floral-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      background-image: url('https://iili.io/CFJkLpn.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #F5F0E8;
+    }
+    .floral-decoration { display: none; }
+    #app { position: relative; z-index: 2; }
+    .ornament::before, .ornament::after {
+      content: '✿';
+      color: var(--champagne);
+      margin: 0 12px;
+      font-size: 14px;
+    }
+    .admin-lock {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    .toast {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      animation: slideDown 0.3s ease;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+      to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; font-family: 'Poppins', sans-serif; }
+    th { background: #f9f6f0; font-weight: 600; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/935a53bc2e11fb8d.data_sdk.js" type="text/javascript" integrity="sha512-qr2oyPnEys1WebcOABaRh6hG77r5PWpqeWW6JTKbRJqly/INsfBi31CVNlTmHqjgeLpkVmmHZJUdxSx/32tOFQ=="></script>
+ </head>
+ <body>
+  <div class="floral-bg"></div>
+  <div id="notification-modal" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 backdrop-blur-sm" style="display: none;">
+   <div class="bg-white rounded-lg shadow-2xl w-full max-w-md p-8 max-h-96 overflow-y-auto">
+    <div class="flex items-start gap-4 mb-4">
+     <div class="flex-shrink-0">
+      <div class="flex items-center justify-center h-12 w-12 rounded-full" style="background: linear-gradient(135deg, #FF6B6B, #FFD93D); color: white;">
+       <i data-lucide="alert-circle" style="width:24px;height:24px;"></i>
+      </div>
+     </div>
+     <div class="flex-1">
+      <h3 class="text-lg font-bold" style="color: #8B6914;">⚠️ Pemberitahuan Penting</h3>
+     </div>
+    </div>
+    <div id="notification-content" class="text-sm text-gray-700 mb-6 leading-relaxed font-poppins" style="color: #333;"></div><button onclick="closeNotification()" class="w-full py-3 rounded-full font-bold text-white transition-all hover:shadow-lg" style="background: linear-gradient(135deg, #FF6B6B, #FF5252);"> OK, Saya Faham </button>
+   </div>
+  </div>
+  <div id="app" class="relative z-10 w-full">
+   <div class="admin-lock" onclick="showAdminLogin()">
+    <i data-lucide="lock" style="width:20px;height:20px;color:#C9A96E;"></i>
+   </div>
+   <div id="toast-container"></div>
+   
+   <!-- ELEMEN AUDIO TERSEMBUNYI -->
+   <audio id="bg-music" loop preload="auto">
+       <source src="lagu.mp3" type="audio/mpeg">
+   </audio>
+
+   <div id="page-invitation" class="w-full min-h-full py-8 px-4">
+    <div class="max-w-lg mx-auto">
+     <div class="glass-card p-8 mb-6 text-center fade-in">
+      <p class="font-arabic text-xl sm:text-2xl md:text-4xl font-bold mb-3" style="color: var(--champagne); letter-spacing: 2px; text-shadow: 0 4px 12px rgba(201, 169, 110, 0.25);" id="tajuk-besar-1">Bismillahirrahmanirrahim</p>
+      <p class="font-playfair text-lg mb-2" id="tajuk-besar-2" style="color: #333;">Jemputan Ke Majlis</p>
+      <h1 class="font-cormorant text-3xl md:text-4xl mb-1" id="tajuk-besar-3" style="color: var(--dark-gold); font-weight: 400;">Walimatul Urus</h1>
+      <h2 id="tajuk-besar-4" class="font-great-vibes text-5xl md:text-6xl mb-2 leading-tight" style="color: var(--rose-gold);">Zharfan &amp; Syazwana</h2>
+      <p id="tajuk-besar-5" class="font-cormorant text-base md:text-lg mb-1" style="color: #6F6A66; font-weight: 400;">Serta</p>
+      <p id="tajuk-besar-6" class="font-cormorant text-2xl md:text-3xl mb-1" style="color: var(--dark-gold); font-weight: 400;">Perjumpaan Keluarga</p>
+      <p id="tajuk-besar-7" class="font-bold" style="font-family:'EB Garamond', serif; font-size:1.5rem; line-height:1.25; color: var(--rose-gold); font-style: italic;">Almarhum Tok Wan Zainuddin</p>
+      <p id="tajuk-besar-8" class="font-bold mb-6" style="font-family:'EB Garamond', serif; font-size:1.5rem; line-height:1.25; color: var(--rose-gold); font-style: italic;">&amp; Almarhumah Tok Tun</p>
+      <div class="ornament"></div>
+      <blockquote class="font-cormorant italic text-base mt-6 px-4 leading-relaxed" style="color: #555;">
+       "<strong>Dan bertaqwalah kepada Allah yang kamu selalu meminta dengan menyebut-yebut namaNya, serta peliharalah hubungan (silaturrahim) kaum kerabat; kerana sesungguhnya Allah sentiasa memerhati (mengawas) kamu</strong>" <cite class="block mt-2 not-italic text-sm" style="color: var(--champagne);"><strong>An-Nisa' 4:1</strong></cite>
+      </blockquote>
+     </div>
+     <div class="glass-card p-6 mb-6 fade-in" style="animation-delay: 0.2s;">
+      <h3 class="font-playfair text-xl text-center mb-4" style="color: var(--dark-gold);">Maklumat Majlis</h3>
+      <div class="space-y-3 font-poppins text-sm">
+       <div class="flex items-center gap-3">
+        <span>📅</span> <span id="event-date-display" class="text-sm">Sabtu, 19 Disember 2026</span>
+       </div>
+       <div class="flex items-center gap-3">
+        <span>🕢</span> <span id="event-time-display" class="text-sm">19:30 – 22:30</span>
+       </div>
+       <div class="flex items-start gap-3">
+        <span>📍</span>
+        <div>
+         <span id="venue-display" class="text-sm">Resort Teluk Penchalang</span>
+        </div>
+       </div>
+      </div>
+      <div class="mt-4 text-center">
+       <button onclick="handleHeaderMapButton()" class="inline-block btn-gold px-5 py-2 rounded-full text-sm font-semibold"><i data-lucide="map-pin" style="width:14px;height:14px;display:inline;vertical-align:middle;"></i> Buka Peta</button>
+      </div>
+     </div>
+     <div class="glass-card p-6 mb-6 fade-in" style="animation-delay: 0.3s;">
+      <h3 class="font-playfair text-xl text-center mb-4" style="color: var(--dark-gold);">Sebarang Pertanyaan Lanjut</h3>
+      <p class="text-center text-sm mb-4" style="color: #555;">Sila hubungi:</p>
+      <div class="space-y-3"><button onclick="handleHeaderContactButton(headerData.noWhatsapp1)" class="w-full flex items-center gap-2 px-4 py-3 rounded-full border-2 justify-center hover:bg-gray-50 transition" style="border-color:var(--champagne);color:#333;"><i data-lucide="phone" style="width:16px;height:16px;"></i> <span class="font-semibold" id="contact-name-1">Zaharuddin (Ayah)</span></button> <button onclick="handleHeaderContactButton(headerData.noWhatsapp2)" class="w-full flex items-center gap-2 px-4 py-3 rounded-full border-2 justify-center hover:bg-gray-50 transition" style="border-color:var(--rose-gold);color:#333;"><i data-lucide="phone" style="width:16px;height:16px;"></i> <span class="font-semibold" id="contact-name-2">Siti Safura (Ibu)</span></button>
+      </div>
+     </div>
+     <div class="glass-card p-6 mb-6 fade-in text-center" style="animation-delay: 0.4s;">
+      <h3 class="font-playfair text-lg mb-4" style="color: var(--dark-gold);">Menghitung Hari</h3>
+      <div id="countdown" class="flex justify-center gap-3 flex-wrap">
+       <div class="countdown-box p-3 text-center">
+        <div id="cd-days" class="text-2xl font-bold font-poppins" style="color:var(--dark-gold);">
+         --
+        </div>
+        <div class="text-xs text-gray-500">
+         Hari
+        </div>
+       </div>
+       <div class="countdown-box p-3 text-center">
+        <div id="cd-hours" class="text-2xl font-bold font-poppins" style="color:var(--dark-gold);">
+         --
+        </div>
+        <div class="text-xs text-gray-500">
+         Jam
+        </div>
+       </div>
+       <div class="countdown-box p-3 text-center">
+        <div id="cd-mins" class="text-2xl font-bold font-poppins" style="color:var(--dark-gold);">
+         --
+        </div>
+        <div class="text-xs text-gray-500">
+         Minit
+        </div>
+       </div>
+       <div class="countdown-box p-3 text-center">
+        <div id="cd-secs" class="text-2xl font-bold font-poppins" style="color:var(--dark-gold);">
+         --
+        </div>
+        <div class="text-xs text-gray-500">
+         Saat
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="glass-card p-6 mb-6 fade-in text-center" style="animation-delay: 0.45s;">
+      <h3 class="font-playfair text-lg mb-4" style="color: var(--dark-gold);">Kapasiti Tetamu</h3>
+      <div id="capacity-display" class="mb-4">
+       <div class="text-4xl font-bold font-poppins" style="color:var(--dark-gold);">
+        <span id="capacity-current">0</span> / <span id="capacity-max">170</span>
+       </div>
+      </div>
+      <div id="capacity-bar" class="h-3 rounded-full bg-gray-200 overflow-hidden mb-3">
+       <div id="capacity-bar-fill" class="h-full rounded-full transition-all" style="width:0%;background:var(--champagne);"></div>
+      </div>
+      <div id="capacity-status" class="text-sm font-poppins" style="color:var(--rose-gold);">
+       <span id="capacity-text">Masih ada tempat untuk tetamu</span>
+      </div>
+     </div>
+     <div class="glass-card p-6 mb-6 fade-in" style="animation-delay: 0.5s;">
+      <h3 class="font-playfair text-xl text-center mb-4" style="color: var(--dark-gold);">Borang RSVP</h3>
+      <div id="capacity-warning" class="hidden bg-red-100 text-red-700 p-3 rounded-lg mb-4 text-center font-semibold">
+       Maaf, kapasiti tetamu telah penuh (<span id="capacity-max-display">--</span> orang).
+      </div>
+      <div id="closure-message" class="hidden bg-red-100 text-red-700 p-4 rounded-lg mb-4 text-center">
+       <p class="font-semibold mb-1">⏰ Pendaftaran Ditutup</p>
+       <p class="text-sm">Maaf, tempoh pendaftaran telah ditutup.</p>
+      </div>
+      <form id="rsvp-form" class="space-y-4">
+       <div>
+        <label for="nama" class="block text-sm font-semibold mb-1">Nama Penuh (Ketua Keluarga) *</label><input type="text" id="nama" required class="font-poppins text-sm w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2" style="border-color:#ddd;">
+       </div>
+       <div>
+        <label for="telefon" class="block text-sm font-semibold mb-1">Nombor Telefon * <span class="text-xs text-gray-400">(cth: 010-8402093)</span></label><input type="tel" id="telefon" required placeholder="010-8402093" class="font-poppins text-sm w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2" style="border-color:#ddd;">
+       </div>
+       <div>
+        <label for="hubungan" class="block text-sm font-semibold mb-1">Hubungan Dengan Tuan Rumah *</label><select id="hubungan" required class="font-poppins text-sm w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2" style="border-color:#ddd;"><option value="">-- Pilih --</option><option value="Ahli Keluarga Paktak">Ahli Keluarga Paktak</option><option value="Ahli Keluarga Tok Yahya">Ahli Keluarga Tok Yahya</option></select>
+       </div>
+       <div>
+        <label class="block text-sm font-semibold mb-1">Bilangan Kehadiran *</label>
+        <div class="flex items-center gap-3">
+         <button type="button" onclick="adjustBilangan(-1)" class="w-9 h-9 rounded-full border-2 flex items-center justify-center font-bold font-poppins" style="border-color:var(--champagne);color:var(--dark-gold);">−</button><span id="bilangan-display" class="text-xl font-bold font-poppins" style="color:var(--dark-gold);">1</span><button type="button" onclick="adjustBilangan(1)" class="w-9 h-9 rounded-full border-2 flex items-center justify-center font-bold font-poppins" style="border-color:var(--champagne);color:var(--dark-gold);">+</button>
+        </div>
+       </div>
+       <div id="category-section" class="bg-gray-50 p-4 rounded-lg space-y-3">
+        <p class="text-sm font-semibold mb-2">Pecahan Kehadiran:</p>
+        <div class="grid grid-cols-2 gap-3">
+         <div>
+          <label class="text-xs text-gray-600 font-poppins font-semibold">Dewasa Lelaki (≥10 thn)</label><input type="number" id="dewasa_lelaki" min="0" value="1" class="w-full px-3 py-1 rounded border text-center font-poppins" onchange="checkCategoryTotal()">
+         </div>
+         <div>
+          <label class="text-xs text-gray-600 font-poppins font-semibold">Kanak² Lelaki (≤9 thn)</label><input type="number" id="kanakkanak_lelaki" min="0" value="0" class="w-full px-3 py-1 rounded border text-center font-poppins" onchange="checkCategoryTotal()">
+         </div>
+         <div>
+          <label class="text-xs text-gray-600 font-poppins font-semibold">Dewasa Perempuan (≥10 thn)</label><input type="number" id="dewasa_perempuan" min="0" value="0" class="w-full px-3 py-1 rounded border text-center font-poppins" onchange="checkCategoryTotal()">
+         </div>
+         <div>
+          <label class="text-xs text-gray-600 font-poppins font-semibold">Kanak² Perempuan (≤9 thn)</label><input type="number" id="kanakkanak_perempuan" min="0" value="0" class="w-full px-3 py-1 rounded border text-center font-poppins" onchange="checkCategoryTotal()">
+         </div>
+        </div>
+        <p id="category-error" class="text-red-500 text-xs hidden">⚠️ Jumlah pecahan mesti sama dengan bilangan kehadiran!</p>
+        <p id="category-ok" class="text-green-600 text-xs hidden">✓ Jumlah sepadan.</p>
+       </div>
+       <div>
+        <label for="ucapan" class="block text-sm font-semibold mb-1">Mesej / Ucapan (pilihan)</label><textarea id="ucapan" rows="3" class="font-poppins text-sm w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2" style="border-color:#ddd;" placeholder="Tahniah dan selamat pengantin baru!"></textarea>
+       </div><button type="submit" id="submit-btn" class="w-full btn-gold py-3 rounded-full font-playfair text-lg font-semibold">Hantar RSVP</button>
+       <div id="submit-loading" class="hidden text-center text-sm text-gray-500">
+        Menghantar...
+       </div>
+      </form>
+     </div>
+     <div class="text-center py-4 font-cormorant text-sm" style="color: var(--champagne);">
+      <span class="ornament">Dengan Lafaz Bismillah</span>
+     </div>
+    </div>
+   </div>
+   <div id="admin-login-modal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+    <div class="glass-card p-6 w-full max-w-xs">
+     <h3 class="font-playfair text-lg text-center mb-4" style="color:var(--dark-gold);">Admin Login</h3><input type="password" id="admin-pass" placeholder="Kata Laluan" class="w-full px-4 py-2 rounded-lg border mb-3">
+     <div class="flex gap-2">
+      <button onclick="checkAdminPass()" class="flex-1 btn-gold py-2 rounded-full text-sm font-semibold">Masuk</button><button onclick="hideAdminLogin()" class="flex-1 py-2 rounded-full border text-sm">Batal</button>
+     </div>
+     <p id="admin-error" class="text-red-500 text-xs text-center mt-2 hidden">Kata laluan salah.</p>
+    </div>
+   </div>
+   <div id="page-admin" class="hidden w-full min-h-full py-6 px-4" style="background: linear-gradient(135deg, #f5f0e8 0%, #ede4d3 50%, #e8dcc8 100%);">
+    <div class="max-w-4xl mx-auto">
+     <div class="flex justify-between items-center mb-6">
+      <h2 class="font-playfair text-2xl" style="color:var(--dark-gold);">Dashboard Admin</h2>
+      <div class="flex gap-2"><button onclick="printReport()" class="px-4 py-2 rounded-full border text-sm hover:bg-gray-100 font-semibold flex items-center gap-2"><i data-lucide="printer" style="width:16px;height:16px;"></i> Cetak</button> <button onclick="logoutAdmin()" class="px-4 py-2 rounded-full border text-sm hover:bg-gray-100">Keluar</button>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <div class="glass-card p-4 text-center">
+       <div class="text-sm text-gray-500 font-poppins font-semibold">
+        Jumlah Borang
+       </div>
+       <div id="stat-forms" class="text-3xl font-bold font-poppins" style="color:var(--dark-gold);">
+        0
+       </div>
+      </div>
+      <div class="glass-card p-4 text-center">
+       <div class="text-sm text-gray-500 font-poppins font-semibold">
+        Jumlah Kehadiran
+       </div>
+       <div id="stat-attendance" class="text-3xl font-bold font-poppins" style="color:var(--rose-gold);">
+        0
+       </div>
+      </div>
+      <div class="glass-card p-4 text-center">
+       <div class="text-sm text-gray-500 font-poppins font-semibold">
+        Kapasiti
+       </div>
+       <div id="stat-capacity" class="text-xl font-bold font-poppins" style="color:#333;">
+        <span id="stat-used">0</span> / 170
+       </div>
+       <div id="stat-bar" class="mt-2 h-2 rounded-full bg-gray-200 overflow-hidden">
+        <div id="stat-bar-fill" class="h-full rounded-full transition-all" style="width:0%;background:var(--champagne);"></div>
+       </div>
+      </div>
+     </div>
+     <div class="glass-card p-4 mb-6">
+      <h4 class="font-playfair text-lg mb-3" style="color:var(--dark-gold);">Analisis Keluarga</h4>
+      <div id="family-analysis-container"></div>
+     </div>
+     <div id="family-tables-container"></div>
+     <div class="glass-card p-4 mb-6">
+      <h4 class="font-playfair text-lg mb-3" style="color:var(--dark-gold);">Rekod Tetamu</h4>
+      <div id="table-all-cards" class="space-y-3"></div>
+      <div id="empty-records" class="text-center text-gray-500 py-6">
+       Tiada rekod lagi
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+    let MAX_CAPACITY = 170;
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxvGnfiT31NriRbVno7uy7JHkmNxwz_DIyaYgzG3mn1VzaupvtauY0b7zmG6KTxyDUb/exec';
+    const EVENT_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=1283766345&single=true&output=csv';
+    const CLOSURE_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=1524333149&single=true&output=csv';
+    const HUBUNGAN_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=287967393&single=true&output=csv';
+    let visibleFamilyList = [];
+    let hiddenFamilyList = [];
+    const KAPASITI_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=1825579810&single=true&output=csv';
+    const VENUE_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=513364866&single=true&output=csv';
+    const HEADER_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=1732981209&single=true&output=csv';
+    const HEADING_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=164695473&single=true&output=csv';
+    const NOTIFICATION_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQq6tUUZvEVIbv7F5bFwa4iQS_B0da3MHP2SbS7XnhhbSgFf2gb3UIm2qnnJWwe4w_nZsTKRfofKv1G/pub?gid=876625453&single=true&output=csv';
+
+    let allData = [];
+    let bilangan = 1;
+    let eventDateTime = null;
+    let eventTimeEnd = null;
+    let closureDateTime = null;
+    let isRegistrationClosed = false;
+    let hubunganList = ['Ahli Keluarga Paktak', 'Ahli Keluarga Tok Yahya'];
+    let headerData = { peta: '', nama1: '', noWhatsapp1: '', nama2: '', noWhatsapp2: '' };
+    let tajukData = { tajuk1: 'Bismillahirrahmanirrahim', tajuk2: 'Jemputan Ke Majlis', tajuk3: 'Walimatul Urus', tajuk4: 'Zharfan & Syazwana', tajuk5: 'Serta', tajuk6: 'Perjumpaan Keluarga', tajuk7: 'Almarhum Tok Wan Zainuddin', tajuk8: '& Almarhumah Tok Tun' };
+
+   const defaultConfig = {
+      bride_groom_names: 'Zharfan & Syazwana',
+      venue_name: 'Resort Teluk Penchalang',
+      background_color: '#F5F0E8',
+      surface_color: '#FFFFFF',
+      text_color: '#333333',
+      primary_action_color: '#C9A96E',
+      secondary_action_color: '#B76E79'
+    };
+
+    // PERISAI KESELAMATAN GITHUB: Hanya jalankan ini JIKA fail SDK wujud (elak sistem Crash)
+    if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange: async (config) => {
+            const venue = config.venue_name || defaultConfig.venue_name;
+            document.getElementById('venue-display').textContent = venue;
+            const names = config.bride_groom_names || defaultConfig.bride_groom_names;
+            document.getElementById('tajuk-besar-4').textContent = names;
+            const bg = config.background_color || defaultConfig.background_color;
+            const primary = config.primary_action_color || defaultConfig.primary_action_color;
+            const secondary = config.secondary_action_color || defaultConfig.secondary_action_color;
+            document.documentElement.style.setProperty('--soft-beige', bg);
+            document.documentElement.style.setProperty('--champagne', primary);
+            document.documentElement.style.setProperty('--rose-gold', secondary);
+          },
+          mapToCapabilities: (config) => ({
+            recolorables: [
+              { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+              { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+              { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+              { get: () => config.primary_action_color || defaultConfig.primary_action_color, set: (v) => { config.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); } },
+              { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
+            ],
+            borderables: [],
+            fontEditable: undefined,
+            fontSizeable: undefined
+          }),
+          mapToEditPanelValues: (config) => new Map([
+            ['bride_groom_names', config.bride_groom_names || defaultConfig.bride_groom_names],
+            ['venue_name', config.venue_name || defaultConfig.venue_name]
+          ])
+        });
+    }
+
+    function getMalayMonthNum(name) {
+
+      const m = { januari:0, februari:1, mac:2, april:3, mei:4, juni:5, juli:6, ogos:7, september:8, oktober:9, november:10, disember:11 };
+      return m[name.toLowerCase()];
+    }
+
+    async function loadEventDateTime() {
+      try {
+        const res = await fetch(EVENT_CSV);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length < 2) return;
+        const headers = [];
+        const headerRegex = /"([^"]*)"|([^,]+)/g;
+        let match;
+        while ((match = headerRegex.exec(lines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+        const hIdx = headers.findIndex(h => h === 'hari tarikh');
+        const wIdx = headers.findIndex(h => h === 'waktu');
+        if (hIdx === -1 || wIdx === -1) return;
+        const data = [];
+        const dataRegex = /"([^"]*)"|([^,]+)/g;
+        while ((match = dataRegex.exec(lines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+        if (!data[hIdx] || !data[wIdx]) return;
+        const hariTarikh = data[hIdx];
+        const waktu = data[wIdx];
+        const dateMatch = hariTarikh.match(/([A-Za-z]+),?\s+(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/i);
+        if (!dateMatch) return;
+        const day = parseInt(dateMatch[2]);
+        const month = getMalayMonthNum(dateMatch[3]);
+        const year = parseInt(dateMatch[4]);
+        if (month === undefined) return;
+        const timeMatches = waktu.match(/(\d{1,2}):(\d{2})/g);
+        if (!timeMatches || timeMatches.length === 0) return;
+        const firstTime = timeMatches[0].split(':');
+        eventDateTime = new Date(year, month, day, parseInt(firstTime[0]), parseInt(firstTime[1]), 0);
+        if (timeMatches.length > 1) {
+          const secondTime = timeMatches[1].split(':');
+          eventTimeEnd = new Date(year, month, day, parseInt(secondTime[0]), parseInt(secondTime[1]), 0);
+        }
+        if (isNaN(eventDateTime.getTime())) { eventDateTime = null; return; }
+        updateEventDisplay();
+        updateCountdown();
+      } catch (e) { console.error('Event load error:', e); }
+    }
+
+    function getDateDisplay() {
+      if (!eventDateTime) return 'Sabtu, 19 Disember 2026';
+      const days = ['Ahad', 'Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu'];
+      const months = ['Januari', 'Februari', 'Mac', 'April', 'Mei', 'Juni', 'Juli', 'Ogos', 'September', 'Oktober', 'November', 'Disember'];
+      return `${days[eventDateTime.getDay()]}, ${eventDateTime.getDate()} ${months[eventDateTime.getMonth()]} ${eventDateTime.getFullYear()}`;
+    }
+
+    function getTimeDisplay() {
+      if (!eventDateTime) return '19:30 – 22:30';
+      const h = String(eventDateTime.getHours()).padStart(2, '0');
+      const m = String(eventDateTime.getMinutes()).padStart(2, '0');
+      if (eventTimeEnd) {
+        const hEnd = String(eventTimeEnd.getHours()).padStart(2, '0');
+        const mEnd = String(eventTimeEnd.getMinutes()).padStart(2, '0');
+        return `${h}:${m} – ${hEnd}:${mEnd}`;
+      }
+      return `${h}:${m}`;
+    }
+
+    function updateEventDisplay() {
+      document.getElementById('event-date-display').textContent = getDateDisplay();
+      document.getElementById('event-time-display').textContent = getTimeDisplay();
+    }
+
+    async function loadClosureDateTime() {
+      try {
+        const res = await fetch(CLOSURE_CSV);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length < 2) return;
+        const headers = lines[0].split(',').map(h => h.trim().toLowerCase().replace(/"/g, ''));
+        const tIdx = headers.findIndex(h => h.includes('tarikh') && h.includes('tutup'));
+        const mIdx = headers.findIndex(h => h.includes('masa') && h.includes('tutup'));
+        if (tIdx === -1 || mIdx === -1) return;
+        const data = lines[1].split(',').map(v => v.trim().replace(/"/g, ''));
+        const tarikh = data[tIdx];
+        const masa = data[mIdx];
+        if (!tarikh || !masa) return;
+        let dateObj;
+        if (tarikh.includes('-')) {
+          const [y, m, d] = tarikh.split('-').map(Number);
+          dateObj = new Date(y, m - 1, d);
+        } else if (tarikh.includes('/')) {
+          const parts = tarikh.split('/').map(Number);
+          if (parts.length === 3) { dateObj = parts[0] > 31 ? new Date(parts[0], parts[1] - 1, parts[2]) : new Date(parts[2], parts[1] - 1, parts[0]); }
+        }
+        if (!dateObj || isNaN(dateObj.getTime())) return;
+        const [h, m] = masa.split(':').map(Number);
+        dateObj.setHours(h || 0, m || 0, 0);
+        closureDateTime = dateObj;
+        checkClosureStatus();
+      } catch (e) { console.error('Closure load error:', e); }
+    }
+
+    function checkClosureStatus() {
+      if (!closureDateTime) return;
+      const newStatus = new Date() > closureDateTime;
+      if (newStatus !== isRegistrationClosed) { isRegistrationClosed = newStatus; updateFormUI(); }
+    }
+
+    function updateFormUI() {
+      const form = document.getElementById('rsvp-form');
+      const msg = document.getElementById('closure-message');
+      if (isRegistrationClosed) { form.style.display = 'none'; msg.classList.remove('hidden'); }
+      else { form.style.display = 'block'; msg.classList.add('hidden'); }
+    }
+
+    async function loadHubunganList() {
+      try {
+        // Add timestamp to prevent caching
+        const timestamp = new Date().getTime();
+        const separator = HUBUNGAN_CSV.includes('?') ? '&' : '?';
+        const hubunganUrl = HUBUNGAN_CSV + separator + 't=' + timestamp;
+        const res = await fetch(hubunganUrl);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length < 2) return;
+        const headers = [];
+        const headerRegex = /"([^"]*)"|([^,]+)/g;
+        let match;
+        while ((match = headerRegex.exec(lines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+        
+        // Cari kedua kolum
+        let hIdx = headers.findIndex(h => h === 'hubungan dengan tuan rumah');
+        let h2Idx = headers.findIndex(h => h === 'hubungan dengan tuan rumah 2');
+        
+        if (hIdx === -1) hIdx = headers.findIndex(h => h === 'hubungan');
+        if (h2Idx === -1) h2Idx = headers.findIndex(h => h.includes('hubungan') && h.includes('2'));
+        
+        if (hIdx === -1) return;
+        
+        const newVisibleList = [];
+        const newHiddenList = [];
+        
+        for (let i = 1; i < lines.length; i++) {
+          const line = lines[i].trim();
+          if (!line) continue;
+          const data = [];
+          const dataRegex = /"([^"]*)"|([^,]+)/g;
+          while ((match = dataRegex.exec(line)) !== null) { data.push((match[1] || match[2] || '').trim()); }
+          
+          // Kolum 1 - ditampilkan di dropdown
+          if (data[hIdx] && data[hIdx].trim()) newVisibleList.push(data[hIdx].trim());
+          
+          // Kolum 2 - disembunyikan dari dropdown tapi diproses dalam statistik
+          if (h2Idx !== -1 && data[h2Idx] && data[h2Idx].trim()) newHiddenList.push(data[h2Idx].trim());
+        }
+        
+        if (newVisibleList.length > 0) { 
+          visibleFamilyList = [...new Set(newVisibleList)]; 
+          hubunganList = visibleFamilyList;
+          updateHubunganSelect(); 
+        }
+        
+        if (newHiddenList.length > 0) { 
+          hiddenFamilyList = [...new Set(newHiddenList)]; 
+        }
+      } catch (e) { console.error('Hubungan load error:', e); }
+    }
+
+    function updateHubunganSelect() {
+      const select = document.getElementById('hubungan');
+      const currentValue = select.value;
+      select.innerHTML = '<option value="">-- Pilih --</option>';
+      hubunganList.forEach(h => { const opt = document.createElement('option'); opt.value = h; opt.textContent = h; select.appendChild(opt); });
+      select.value = currentValue;
+    }
+
+    async function loadMaxCapacity() {
+      try {
+        const res = await fetch(KAPASITI_CSV);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length < 2) return;
+        const headers = [];
+        const headerRegex = /"([^"]*)"|([^,]+)/g;
+        let match;
+        while ((match = headerRegex.exec(lines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+        const kIdx = headers.findIndex(h => h === 'kapasiti');
+        if (kIdx === -1) return;
+        const data = [];
+        const dataRegex = /"([^"]*)"|([^,]+)/g;
+        while ((match = dataRegex.exec(lines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+        if (data[kIdx]) { const kapasiti = parseInt(data[kIdx].trim()); if (!isNaN(kapasiti) && kapasiti > 0) MAX_CAPACITY = kapasiti; }
+      } catch (e) { console.error('Kapasiti load error:', e); }
+    }
+
+    async function loadVenue() {
+      try {
+        const res = await fetch(VENUE_CSV);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length < 2) return;
+        const headers = [];
+        const headerRegex = /"([^"]*)"|([^,]+)/g;
+        let match;
+        while ((match = headerRegex.exec(lines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+        const tempat = headers.findIndex(h => h === 'tempat');
+        if (tempat === -1) return;
+        const data = [];
+        const dataRegex = /"([^"]*)"|([^,]+)/g;
+        while ((match = dataRegex.exec(lines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+        if (data[tempat]) {
+          const venueName = data[tempat].trim();
+          if (venueName) { document.getElementById('venue-display').textContent = venueName; }
+        }
+      } catch (e) { console.error('Venue load error:', e); }
+    }
+
+    async function loadTajukData() {
+      try {
+        const timestamp = new Date().getTime();
+        const separator = HEADING_CSV.includes('?') ? '&' : '?';
+        const headingUrl = HEADING_CSV + separator + 't=' + timestamp;
+        const res = await fetch(headingUrl);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length >= 2) {
+          const headers = [];
+          const headerRegex = /"([^"]*)"|([^,]+)/g;
+          let match;
+          while ((match = headerRegex.exec(lines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+          const data = [];
+          const dataRegex = /"([^"]*)"|([^,]+)/g;
+          while ((match = dataRegex.exec(lines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+          const t1Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('1'));
+          const t2Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('2'));
+          const t3Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('3'));
+          const t4Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('4'));
+          const t5Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('5'));
+          const t6Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('6'));
+          const t7Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('7'));
+          const t8Idx = headers.findIndex(h => h.includes('tajuk') && h.includes('besar') && h.includes('8'));
+          if (t1Idx !== -1 && data[t1Idx]) tajukData.tajuk1 = data[t1Idx];
+          if (t2Idx !== -1 && data[t2Idx]) tajukData.tajuk2 = data[t2Idx];
+          if (t3Idx !== -1 && data[t3Idx]) tajukData.tajuk3 = data[t3Idx];
+          if (t4Idx !== -1 && data[t4Idx]) tajukData.tajuk4 = data[t4Idx];
+          if (t5Idx !== -1 && data[t5Idx]) tajukData.tajuk5 = data[t5Idx];
+          if (t6Idx !== -1 && data[t6Idx]) tajukData.tajuk6 = data[t6Idx];
+          if (t7Idx !== -1 && data[t7Idx]) tajukData.tajuk7 = data[t7Idx];
+          if (t8Idx !== -1 && data[t8Idx]) tajukData.tajuk8 = data[t8Idx];
+        }
+      } catch (e) { console.error('Tajuk load error:', e); }
+    }
+
+    async function initializeTajukData() {
+      await loadTajukData();
+      document.getElementById('tajuk-besar-1').textContent = tajukData.tajuk1;
+      document.getElementById('tajuk-besar-2').textContent = tajukData.tajuk2;
+      document.getElementById('tajuk-besar-3').textContent = tajukData.tajuk3;
+      document.getElementById('tajuk-besar-4').textContent = tajukData.tajuk4;
+      document.getElementById('tajuk-besar-5').textContent = tajukData.tajuk5;
+      document.getElementById('tajuk-besar-6').textContent = tajukData.tajuk6;
+      document.getElementById('tajuk-besar-7').textContent = tajukData.tajuk7;
+      document.getElementById('tajuk-besar-8').textContent = tajukData.tajuk8;
+    }
+
+    async function loadHeaderData() {
+      try {
+        const timestamp = new Date().getTime();
+        const headerSeparator = HEADER_CSV.includes('?') ? '&' : '?';
+        const venueSeparator = VENUE_CSV.includes('?') ? '&' : '?';
+        const headerUrl = HEADER_CSV + headerSeparator + 't=' + timestamp;
+        const venueUrl = VENUE_CSV + venueSeparator + 't=' + timestamp;
+        const [headerRes, venueRes] = await Promise.all([fetch(headerUrl), fetch(venueUrl)]);
+        const headerCsv = await headerRes.text();
+        const venueCsv = await venueRes.text();
+        const headerLines = headerCsv.trim().split('\n');
+        if (headerLines.length >= 2) {
+          const headers = [];
+          const headerRegex = /"([^"]*)"|([^,]+)/g;
+          let match;
+          while ((match = headerRegex.exec(headerLines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+          const data = [];
+          const dataRegex = /"([^"]*)"|([^,]+)/g;
+          while ((match = dataRegex.exec(headerLines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+          const mapIdx = headers.findIndex(h => h === 'maps' || h === 'peta');
+          const nama1Idx = headers.findIndex(h => h.includes('nama') && h.includes('1'));
+          const wa1Idx = headers.findIndex(h => h.includes('whatsapp') && h.includes('1'));
+          const nama2Idx = headers.findIndex(h => h.includes('nama') && h.includes('2'));
+          const wa2Idx = headers.findIndex(h => h.includes('whatsapp') && h.includes('2'));
+          headerData.peta = (mapIdx !== -1 && data[mapIdx]) ? data[mapIdx] : '';
+          headerData.nama1 = (nama1Idx !== -1 && data[nama1Idx]) ? data[nama1Idx] : 'Zaharuddin (Ayah)';
+          headerData.noWhatsapp1 = (wa1Idx !== -1 && data[wa1Idx]) ? data[wa1Idx] : '60195777048';
+          headerData.nama2 = (nama2Idx !== -1 && data[nama2Idx]) ? data[nama2Idx] : 'Siti Safura (Ibu)';
+          headerData.noWhatsapp2 = (wa2Idx !== -1 && data[wa2Idx]) ? data[wa2Idx] : '601110612419';
+        }
+        const venueLines = venueCsv.trim().split('\n');
+        if (venueLines.length >= 2) {
+          const headers = [];
+          const headerRegex = /"([^"]*)"|([^,]+)/g;
+          let match;
+          while ((match = headerRegex.exec(venueLines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+          const tempat = headers.findIndex(h => h === 'tempat');
+          if (tempat !== -1) {
+            const data = [];
+            const dataRegex = /"([^"]*)"|([^,]+)/g;
+            while ((match = dataRegex.exec(venueLines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+            if (data[tempat]) { const venueName = data[tempat].trim(); if (venueName) { document.getElementById('venue-display').textContent = venueName; } }
+          }
+        }
+        document.getElementById('contact-name-1').textContent = headerData.nama1;
+        document.getElementById('contact-name-2').textContent = headerData.nama2;
+      } catch (e) { console.error('Header load error:', e); }
+    }
+
+    async function loadRSVPData() {
+      try {
+        const res = await fetch(GOOGLE_SCRIPT_URL + '?action=getAllData');
+        const result = await res.json();
+        if (result.success && Array.isArray(result.data)) allData = result.data;
+        updateCapacityUI();
+        if (!document.getElementById('page-admin').classList.contains('hidden')) renderDashboard();
+      } catch (e) { console.error('RSVP load error:', e); }
+    }
+
+    (async () => {
+      await loadAndShowNotification();
+      await initializeTajukData();
+      await loadEventDateTime();
+      await loadClosureDateTime();
+      await loadHubunganList();
+      await loadMaxCapacity();
+      await loadVenue();
+      await loadHeaderData();
+      await loadRSVPData();
+    })();
+
+    setInterval(() => loadEventDateTime(), 10000);
+    setInterval(() => checkClosureStatus(), 60000);
+    setInterval(async () => { await loadHubunganList(); if (!document.getElementById('page-admin').classList.contains('hidden')) renderDashboard(); }, 8000);
+    setInterval(async () => { const oldCapacity = MAX_CAPACITY; await loadMaxCapacity(); if (oldCapacity !== MAX_CAPACITY && !document.getElementById('page-admin').classList.contains('hidden')) renderDashboard(); }, 8000);
+    setInterval(async () => { await loadVenue(); }, 8000);
+    setInterval(async () => { await loadTajukData(); document.getElementById('tajuk-besar-1').textContent = tajukData.tajuk1; document.getElementById('tajuk-besar-2').textContent = tajukData.tajuk2; document.getElementById('tajuk-besar-3').textContent = tajukData.tajuk3; document.getElementById('tajuk-besar-4').textContent = tajukData.tajuk4; document.getElementById('tajuk-besar-5').textContent = tajukData.tajuk5; document.getElementById('tajuk-besar-6').textContent = tajukData.tajuk6; document.getElementById('tajuk-besar-7').textContent = tajukData.tajuk7; document.getElementById('tajuk-besar-8').textContent = tajukData.tajuk8; }, 8000);
+    setInterval(loadRSVPData, 3000);
+
+    function updateCountdown() {
+      const target = eventDateTime || new Date('2026-12-19T19:30:00');
+      const diff = target - new Date();
+      if (diff <= 0) { document.getElementById('cd-days').textContent = '0'; document.getElementById('cd-hours').textContent = '0'; document.getElementById('cd-mins').textContent = '0'; document.getElementById('cd-secs').textContent = '0'; return; }
+      document.getElementById('cd-days').textContent = Math.floor(diff / 86400000);
+      document.getElementById('cd-hours').textContent = Math.floor((diff % 86400000) / 3600000);
+      document.getElementById('cd-mins').textContent = Math.floor((diff % 3600000) / 60000);
+      document.getElementById('cd-secs').textContent = Math.floor((diff % 60000) / 1000);
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    function adjustBilangan(delta) { bilangan = Math.max(1, bilangan + delta); document.getElementById('bilangan-display').textContent = bilangan; checkCategoryTotal(); }
+
+    function checkCategoryTotal() {
+      const dl = parseInt(document.getElementById('dewasa_lelaki').value) || 0;
+      const kl = parseInt(document.getElementById('kanakkanak_lelaki').value) || 0;
+      const dp = parseInt(document.getElementById('dewasa_perempuan').value) || 0;
+      const kp = parseInt(document.getElementById('kanakkanak_perempuan').value) || 0;
+      const total = dl + kl + dp + kp;
+      if (total !== bilangan) { document.getElementById('category-error').classList.remove('hidden'); document.getElementById('category-ok').classList.add('hidden'); }
+      else { document.getElementById('category-error').classList.add('hidden'); document.getElementById('category-ok').classList.remove('hidden'); }
+    }
+
+    function getTotalAttendance() { return allData.reduce((sum, r) => sum + (r.bilangan || 0), 0); }
+
+    function updateCapacityUI() {
+      const total = getTotalAttendance();
+      const btn = document.getElementById('submit-btn');
+      const warn = document.getElementById('capacity-warning');
+      const maxDisplay = document.getElementById('capacity-max-display');
+      maxDisplay.textContent = MAX_CAPACITY;
+      
+      // Update card kapasiti di halaman utama
+      document.getElementById('capacity-current').textContent = total;
+      document.getElementById('capacity-max').textContent = MAX_CAPACITY;
+      const pct = Math.min(100, (total / MAX_CAPACITY) * 100);
+      document.getElementById('capacity-bar-fill').style.width = pct + '%';
+      
+      const capacityText = document.getElementById('capacity-text');
+      const remaining = MAX_CAPACITY - total;
+      if (total >= MAX_CAPACITY) { 
+        capacityText.textContent = '🔴 Kapasiti penuh';
+        warn.classList.remove('hidden'); 
+        btn.disabled = true; 
+        btn.style.opacity = '0.5'; 
+      }
+      else { 
+        capacityText.textContent = `🟢 ${remaining} tempat lagi tersedia`;
+        warn.classList.add('hidden'); 
+        btn.disabled = false; 
+        btn.style.opacity = '1'; 
+      }
+    }
+
+    function validatePhone(phone) { if (!phone.includes('-')) return false; const digits = phone.replace(/\D/g, ''); return digits.length >= 10 && digits.length <= 11; }
+
+    document.getElementById('rsvp-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value.trim();
+      const telefon = document.getElementById('telefon').value.trim();
+      const hubungan = document.getElementById('hubungan').value;
+      const ucapan = document.getElementById('ucapan').value.trim();
+      const dl = parseInt(document.getElementById('dewasa_lelaki').value) || 0;
+      const kl = parseInt(document.getElementById('kanakkanak_lelaki').value) || 0;
+      const dp = parseInt(document.getElementById('dewasa_perempuan').value) || 0;
+      const kp = parseInt(document.getElementById('kanakkanak_perempuan').value) || 0;
+
+      if (!nama || !telefon || !hubungan) { showToast('Sila lengkapkan semua medan wajib.', 'error'); return; }
+      if (!validatePhone(telefon)) { showToast('Format telefon tidak sah. Contoh: 010-8402093', 'error'); return; }
+      if (dl + kl + dp + kp !== bilangan) { showToast('Jumlah pecahan mesti sama dengan bilangan kehadiran.', 'error'); return; }
+      if (getTotalAttendance() + bilangan > MAX_CAPACITY) { showToast('Maaf, kapasiti tetamu telah penuh.', 'error'); return; }
+      if (isRegistrationClosed) { showToast('Maaf, pendaftaran telah ditutup.', 'error'); return; }
+      if (allData.length >= 999) { showToast('Had rekod telah dicapai.', 'error'); return; }
+
+      const btn = document.getElementById('submit-btn');
+      const loading = document.getElementById('submit-loading');
+      btn.disabled = true;
+      loading.classList.remove('hidden');
+
+      try {
+        const res = await fetch(GOOGLE_SCRIPT_URL + '?action=saveRSVP&' + new URLSearchParams({ nama, telefon, hubungan, bilangan, dewasa_lelaki: dl, kanakkanak_lelaki: kl, dewasa_perempuan: dp, kanakkanak_perempuan: kp, ucapan }));
+        const result = await res.json();
+        btn.disabled = false;
+        loading.classList.add('hidden');
+        if (result.success) {
+          showToast('RSVP berjaya dihantar! 🎉', 'success');
+          document.getElementById('rsvp-form').reset();
+          bilangan = 1;
+          document.getElementById('bilangan-display').textContent = '1';
+          document.getElementById('dewasa_lelaki').value = 1;
+          document.getElementById('kanakkanak_lelaki').value = 0;
+          document.getElementById('dewasa_perempuan').value = 0;
+          document.getElementById('kanakkanak_perempuan').value = 0;
+          checkCategoryTotal();
+          await loadRSVPData();
+        } else { showToast('Ralat semasa menghantar.', 'error'); }
+      } catch (err) { btn.disabled = false; loading.classList.add('hidden'); showToast('Ralat semasa menghantar.', 'error'); }
+    });
+
+    function showToast(msg, type) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.style.background = type === 'success' ? '#d4edda' : type === 'error' ? '#f8d7da' : '#fff3cd';
+      toast.style.color = type === 'success' ? '#155724' : type === 'error' ? '#721c24' : '#856404';
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => toast.remove(), 4000);
+    }
+
+    function handleHeaderMapButton() {
+      let mapUrl = 'https://maps.app.goo.gl/ajSbbnbw3C6FWgkD9?g_st=atm';
+      if (headerData.peta && headerData.peta.trim()) { mapUrl = headerData.peta; }
+      copyToClipboard(mapUrl, '✓ Pautan peta disalin.');
+    }
+
+    function handleHeaderContactButton(noWhatsapp) {
+      if (noWhatsapp && noWhatsapp.trim()) {
+        const cleanNumber = noWhatsapp.replace(/\D/g, '');
+        if (cleanNumber.length > 0) { const waUrl = `https://wa.me/${cleanNumber}`; copyToClipboard(waUrl, '✓ Pautan WhatsApp disalin.'); return; }
+      }
+      showToast('Nombor WhatsApp tidak tersedia.', 'error');
+    }
+
+    function copyToClipboard(text, msg) {
+      if (navigator.clipboard) { navigator.clipboard.writeText(text).then(() => showToast(msg, 'warning')).catch(() => fallbackCopy(text, msg)); }
+      else { fallbackCopy(text, msg); }
+    }
+
+    function fallbackCopy(text, msg) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); showToast(msg, 'warning'); } catch (e) { showToast('Gagal menyalin.', 'error'); }
+      document.body.removeChild(ta);
+    }
+
+    async function loadAndShowNotification() {
+      try {
+        const timestamp = new Date().getTime();
+        const separator = NOTIFICATION_CSV.includes('?') ? '&' : '?';
+        const notifUrl = NOTIFICATION_CSV + separator + 't=' + timestamp;
+        const res = await fetch(notifUrl);
+        const csv = await res.text();
+        const lines = csv.trim().split('\n');
+        if (lines.length < 2) return;
+        const headers = [];
+        const headerRegex = /"([^"]*)"|([^,]+)/g;
+        let match;
+        while ((match = headerRegex.exec(lines[0])) !== null) { headers.push((match[1] || match[2] || '').trim().toLowerCase()); }
+        const notifIdx = headers.findIndex(h => h === 'notifikasi');
+        if (notifIdx === -1) return;
+        const data = [];
+        const dataRegex = /"([^"]*)"|([^,]+)/g;
+        while ((match = dataRegex.exec(lines[1])) !== null) { data.push((match[1] || match[2] || '').trim()); }
+        const notificationMessage = data[notifIdx];
+        if (notificationMessage && notificationMessage.trim()) {
+          document.getElementById('notification-content').textContent = notificationMessage;
+          document.getElementById('notification-modal').style.display = 'flex';
+        }
+      } catch (e) { console.error('Notification load error:', e); }
+    }
+
+ function closeNotification() { 
+        document.getElementById('notification-modal').style.display = 'none'; 
+        
+        // Logik: Mainkan lagu latar belakang sebaik sahaja butang OK ditekan
+        const bgMusic = document.getElementById('bg-music');
+        if (bgMusic) {
+            bgMusic.play().catch(err => {
+                console.log("Autoplay disekat oleh pelayar web:", err);
+            });
+        }
+    }
+
+    function showAdminLogin() { document.getElementById('admin-login-modal').classList.remove('hidden'); document.getElementById('admin-pass').value = ''; document.getElementById('admin-error').classList.add('hidden'); }
+    function hideAdminLogin() { document.getElementById('admin-login-modal').classList.add('hidden'); }
+
+    function checkAdminPass() {
+      if (document.getElementById('admin-pass').value === 'Ayah') { hideAdminLogin(); document.getElementById('page-invitation').classList.add('hidden'); document.getElementById('page-admin').classList.remove('hidden'); renderDashboard(); }
+      else { document.getElementById('admin-error').classList.remove('hidden'); }
+    }
+
+    function logoutAdmin() { document.getElementById('page-admin').classList.add('hidden'); document.getElementById('page-invitation').classList.remove('hidden'); }
+
+    function renderDashboard() {
+      // Data terlihat (Kolum 1) - untuk UI
+      const visibleData = allData.filter(r => visibleFamilyList.includes(r.hubungan));
+      // Data tersembunyi (Kolum 2) - hanya untuk perhitungan
+      const hiddenData = allData.filter(r => hiddenFamilyList.includes(r.hubungan));
+      
+      // Jumlah Borang dan Kehadiran = Kolum 1 + Kolum 2 (SEMUA)
+      const totalForms = visibleData.length + hiddenData.length;
+      const totalAttendance = visibleData.reduce((sum, r) => sum + (r.bilangan || 0), 0) + hiddenData.reduce((sum, r) => sum + (r.bilangan || 0), 0);
+      // Kapasiti juga = Kolum 1 + Kolum 2 (SEMUA)
+      const totalAttendanceAll = totalAttendance;
+      
+      const familyAnalysisContainer = document.getElementById('family-analysis-container');
+      familyAnalysisContainer.innerHTML = '';
+      const colors = ['#1B7F2B', '#0D47A1', '#C9A96E', '#B76E79', '#8B6914'];
+      const bgColors = ['#f0fff0', '#f0f8ff', '#fffaf0', '#fff5f5', '#fffff0'];
+
+      // Analisis hanya untuk Kolum 1 (ditampilkan)
+      visibleFamilyList.forEach((familyName, index) => {
+        const familyData = visibleData.filter(r => r.hubungan === familyName);
+        const familyAttendance = familyData.reduce((s, r) => s + (r.bilangan || 0), 0);
+        const familyPercentage = Math.min(100, (familyAttendance / MAX_CAPACITY) * 100);
+        const bgColor = colors[index % colors.length];
+        const familyDiv = document.createElement('div');
+        familyDiv.className = 'mb-4 last:mb-0';
+        familyDiv.innerHTML = `<div class="flex justify-between text-sm mb-2"><span class="font-semibold font-poppins">${familyName}</span><span class="font-poppins font-bold" style="color:${bgColor};">${familyAttendance}</span></div><div class="h-6 bg-gray-100 rounded-full overflow-hidden"><div class="h-full rounded-full transition-all" style="width:${familyPercentage}%;background:${bgColor};"></div></div><p class="text-xs text-gray-500 mt-1 text-right font-poppins">${Math.round(familyPercentage)}% daripada kapasiti</p>`;
+        familyAnalysisContainer.appendChild(familyDiv);
+      });
+
+      document.getElementById('stat-forms').textContent = totalForms;
+      document.getElementById('stat-attendance').textContent = totalAttendance;
+      document.getElementById('stat-capacity').innerHTML = `<span id="stat-used">${totalAttendanceAll}</span> / ${MAX_CAPACITY}`;
+      const pct = Math.min(100, (totalAttendanceAll / MAX_CAPACITY) * 100);
+      document.getElementById('stat-bar-fill').style.width = pct + '%';
+
+      const tablesContainer = document.getElementById('family-tables-container');
+      tablesContainer.innerHTML = '';
+
+      // Jadual hanya untuk Kolum 1 (ditampilkan)
+      visibleFamilyList.forEach((familyName, index) => {
+        const familyData = visibleData.filter(r => r.hubungan === familyName);
+        const bgColor = colors[index % colors.length];
+        const bgLight = bgColors[index % bgColors.length];
+        const tableDiv = document.createElement('div');
+        tableDiv.className = 'glass-card p-4 mb-6 overflow-x-auto';
+        tableDiv.innerHTML = `<h4 class="font-playfair text-lg mb-3" style="color:${bgColor};">Jadual ${familyName}</h4><table><thead><tr><th>Nama</th><th>Telefon</th><th>DL</th><th>KL</th><th>DP</th><th>KP</th></tr></thead><tbody></tbody><tfoot><tr style="font-weight:bold;background:${bgLight};"><td>Jumlah</td><td></td><td class="total-dl">0</td><td class="total-kl">0</td><td class="total-dp">0</td><td class="total-kp">0</td></tr></tfoot></table>`;
+        tablesContainer.appendChild(tableDiv);
+        const tbody = tableDiv.querySelector('tbody');
+        let sumDL = 0, sumKL = 0, sumDP = 0, sumKP = 0;
+        familyData.forEach(r => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td>${r.nama||''}</td><td>${r.telefon||''}</td><td class="font-poppins">${r.dewasa_lelaki||0}</td><td class="font-poppins">${r.kanakkanak_lelaki||0}</td><td class="font-poppins">${r.dewasa_perempuan||0}</td><td class="font-poppins">${r.kanakkanak_perempuan||0}</td>`;
+          tbody.appendChild(tr);
+          sumDL += r.dewasa_lelaki || 0; sumKL += r.kanakkanak_lelaki || 0; sumDP += r.dewasa_perempuan || 0; sumKP += r.kanakkanak_perempuan || 0;
+        });
+        tableDiv.querySelector('.total-dl').textContent = sumDL;
+        tableDiv.querySelector('.total-kl').textContent = sumKL;
+        tableDiv.querySelector('.total-dp').textContent = sumDP;
+        tableDiv.querySelector('.total-kp').textContent = sumKP;
+      });
+
+      const cardsContainer = document.getElementById('table-all-cards');
+      const emptyMsg = document.getElementById('empty-records');
+      if (visibleData.length === 0) { cardsContainer.innerHTML = ''; emptyMsg.classList.remove('hidden'); }
+      else {
+        emptyMsg.classList.add('hidden');
+        cardsContainer.innerHTML = '';
+        visibleData.forEach(r => {
+          const familyIndex = visibleFamilyList.indexOf(r.hubungan);
+          const bgColor = colors[familyIndex % colors.length];
+          const bgLight = bgColors[familyIndex % bgColors.length];
+          const date = r.timestamp ? r.timestamp.split(' ')[0] : '-';
+          const totalPeople = (r.dewasa_lelaki||0) + (r.kanakkanak_lelaki||0) + (r.dewasa_perempuan||0) + (r.kanakkanak_perempuan||0);
+          const card = document.createElement('div');
+          card.style.background = bgLight;
+          card.style.borderLeft = `4px solid ${bgColor}`;
+          card.className = 'p-4 rounded-lg';
+          card.innerHTML = `<div class="flex justify-between items-start mb-2"><div class="flex-1"><h5 class="font-semibold text-sm font-poppins" style="color:${bgColor};">${r.nama||''}</h5><p class="text-xs text-gray-600 mt-1 font-poppins">📞 ${r.telefon||''}</p></div><button onclick="showDeleteConfirm('${r.id}', '${(r.nama||'').replace(/'/g, "\\'")}')" class="flex-shrink-0 ml-2 p-2 rounded-lg transition hover:bg-red-100" style="background:none;border:none;cursor:pointer;"><i data-lucide="trash-2" style="width:20px;height:20px;color:#EF4444;stroke-width:2.5;"></i></button></div><div class="bg-white/60 p-2 rounded text-xs space-y-1 mb-2"><div class="flex justify-between"><span class="font-poppins font-semibold">👨 Lelaki (≥10):</span><span class="font-bold font-poppins">${r.dewasa_lelaki||0}</span></div><div class="flex justify-between"><span class="font-poppins font-semibold">👦 Lelaki (≤9):</span><span class="font-bold font-poppins">${r.kanakkanak_lelaki||0}</span></div><div class="flex justify-between"><span class="font-poppins font-semibold">👩 Perempuan (≥10):</span><span class="font-bold font-poppins">${r.dewasa_perempuan||0}</span></div><div class="flex justify-between"><span class="font-poppins font-semibold">👧 Perempuan (≤9):</span><span class="font-bold font-poppins">${r.kanakkanak_perempuan||0}</span></div><div class="border-t pt-1 mt-1 font-bold flex justify-between"><span class="font-poppins">Jumlah:</span><span class="font-poppins">${totalPeople}</span></div></div><div class="flex justify-between items-center text-xs"><span style="color:${bgColor};" class="font-semibold font-poppins">👨‍👩‍👧‍👦 ${r.hubungan}</span><span class="text-gray-500 font-poppins">📅 ${date}</span></div>${r.ucapan ? `<div class="mt-2 text-xs italic text-gray-700 bg-white/40 p-2 rounded font-poppins">💬 "${r.ucapan}"</div>` : ''}`;
+          cardsContainer.appendChild(card);
+        });
+      }
+      lucide.createIcons();
+    }
+
+    async function deleteRecord(backendId) {
+      const record = allData.find(r => r.id === backendId);
+      if (!record) return;
+      try {
+        const res = await fetch(GOOGLE_SCRIPT_URL + '?action=deleteRSVP&' + new URLSearchParams({ nama: record.nama, telefon: record.telefon, hubungan: record.hubungan }));
+        const result = await res.json();
+        if (result.success) { showToast('Rekod telah dipadam.', 'success'); await loadRSVPData(); }
+        else showToast('Ralat semasa memadam.', 'error');
+      } catch (e) { showToast('Ralat semasa memadam.', 'error'); }
+    }
+
+    function showDeleteConfirm(recordId, nama) {
+      const modal = document.createElement('div');
+      modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4';
+      modal.innerHTML = `<div class="glass-card p-6 w-full max-w-sm"><h3 class="font-playfair text-lg text-center mb-4" style="color:#C9361E;">⚠️ Sahkan Pemadaman</h3><p class="text-center text-sm mb-4 text-gray-700">Adakah anda pasti ingin memadamkan rekod untuk <strong>${nama}</strong>?</p><div class="flex gap-3"><button onclick="this.closest('.fixed').remove()" class="flex-1 py-2 rounded-full border text-sm font-semibold hover:bg-gray-100">Batal</button><button onclick="confirmDelete('${recordId}'); this.closest('.fixed').remove();" class="flex-1 py-2 rounded-full text-white text-sm font-semibold" style="background:#C9361E;">Padam</button></div></div>`;
+      document.body.appendChild(modal);
+      modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    }
+
+    async function confirmDelete(recordId) { await deleteRecord(recordId); }
+
+    function printReport() {
+      const printWindow = window.open('', '_blank');
+      if (!printWindow) { showToast('Sila benarkan popup untuk mencetak.', 'error'); return; }
+      
+      // Data terlihat (Kolum 1) - untuk UI
+      const visibleData = allData.filter(r => visibleFamilyList.includes(r.hubungan));
+      // Data tersembunyi (Kolum 2) - hanya untuk perhitungan
+      const hiddenData = allData.filter(r => hiddenFamilyList.includes(r.hubungan));
+      
+      // Jumlah Borang dan Kehadiran = Kolum 1 + Kolum 2 (SEMUA)
+      const totalForms = visibleData.length + hiddenData.length;
+      const totalAttendance = visibleData.reduce((sum, r) => sum + (r.bilangan || 0), 0) + hiddenData.reduce((sum, r) => sum + (r.bilangan || 0), 0);
+      // Kapasiti juga = Kolum 1 + Kolum 2 (SEMUA)
+      const totalAttendanceAll = totalAttendance;
+      
+      const printDate = new Date().toLocaleDateString('ms-MY', {year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'});
+      const colors = ['#1B7F2B', '#0D47A1', '#C9A96E', '#B76E79', '#8B6914'];
+
+      let familyAnalysisHTML = '';
+      // Analisis hanya dari Kolum 1 (terlihat)
+      visibleFamilyList.forEach((familyName, index) => {
+        const familyData = visibleData.filter(r => r.hubungan === familyName);
+        const familyAttendance = familyData.reduce((s, r) => s + (r.bilangan || 0), 0);
+        const familyPercentage = Math.min(100, (familyAttendance / MAX_CAPACITY) * 100);
+        const bgColor = colors[index % colors.length];
+        familyAnalysisHTML += `<div class="chart-item"><div class="chart-header"><span class="chart-label">${familyName}</span><span class="chart-value" style="color:${bgColor};">${familyAttendance}</span></div><div class="chart-bar-container"><div class="chart-bar" style="width:${familyPercentage}%;background:${bgColor};"></div></div><div class="chart-percent">${Math.round(familyPercentage)}% daripada kapasiti</div></div>`;
+      });
+
+      let familySections = '';
+      // Jadual hanya dari Kolum 1 (terlihat)
+      visibleFamilyList.forEach((familyName, index) => {
+        const familyGroups = visibleData.filter(r => r.hubungan === familyName);
+        const famDL = familyGroups.reduce((s,r)=>s+(r.dewasa_lelaki||0),0);
+        const famKL = familyGroups.reduce((s,r)=>s+(r.kanakkanak_lelaki||0),0);
+        const famDP = familyGroups.reduce((s,r)=>s+(r.dewasa_perempuan||0),0);
+        const famKP = familyGroups.reduce((s,r)=>s+(r.kanakkanak_perempuan||0),0);
+        const tableRows = familyGroups.map(r => `<tr><td>${r.nama||''}</td><td>${r.telefon||''}</td><td>${r.dewasa_lelaki||0}</td><td>${r.kanakkanak_lelaki||0}</td><td>${r.dewasa_perempuan||0}</td><td>${r.kanakkanak_perempuan||0}</td></tr>`).join('');
+        const bgColor = colors[index % colors.length];
+        familySections += `<div class="family-section"><div class="family-header" style="background:${bgColor};">✓ ${familyName}</div><table class="family-table"><thead><tr><th>Nama</th><th>Telefon</th><th>DL</th><th>KL</th><th>DP</th><th>KP</th></tr></thead><tbody>${tableRows}</tbody><tfoot><tr><td colspan="2"><strong>Jumlah</strong></td><td>${famDL}</td><td>${famKL}</td><td>${famDP}</td><td>${famKP}</td></tr></tfoot></table></div>`;
+      });
+
+      const htmlContent = `<!DOCTYPE html><html lang="ms"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Laporan Walimatul Urus</title><style>*{margin:0;padding:0;box-sizing:border-box;}html,body{width:100%;height:100%;}body{font-family:'Segoe UI','Arial',sans-serif;color:#2c3e50;line-height:1.6;background:#f5f5f5;}.page{width:210mm;height:297mm;margin:10mm auto;padding:15mm;background:white;box-shadow:0 0 10px rgba(0,0,0,0.1);}.header{text-align:center;border-bottom:3px solid #C9A96E;padding-bottom:12px;margin-bottom:16px;}.header h1{font-size:22px;font-weight:700;color:#8B6914;margin-bottom:3px;}.header p{font-size:12px;color:#666;}.print-date{text-align:right;font-size:10px;color:#999;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #e0e0e0;}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;}.stat-box{background:linear-gradient(135deg,#F5F0E8,#EDE4D3);border-left:4px solid #C9A96E;padding:10px;border-radius:4px;text-align:center;}.stat-label{font-size:9px;color:#666;font-weight:600;text-transform:uppercase;margin-bottom:4px;}.stat-value{font-size:18px;font-weight:700;color:#8B6914;}.analysis-section{margin-bottom:16px;padding:10px;background:#f9f6f0;border-radius:4px;border-left:4px solid #C9A96E;page-break-inside:avoid;}.analysis-section-title{font-size:11px;font-weight:700;color:#8B6914;text-transform:uppercase;margin-bottom:10px;}.chart-item{margin-bottom:10px;}.chart-header{display:flex;justify-content:space-between;font-size:10px;margin-bottom:4px;}.chart-label{font-weight:600;color:#333;}.chart-value{font-weight:700;}.chart-bar-container{width:100%;height:16px;background:#e0e0e0;border-radius:2px;overflow:hidden;margin-bottom:3px;}.chart-bar{height:100%;border-radius:2px;}.chart-percent{font-size:8px;color:#999;text-align:right;}.family-section{margin-bottom:14px;page-break-inside:avoid;}.family-header{font-size:12px;font-weight:700;color:white;padding:6px 8px;border-radius:3px;margin-bottom:8px;}.family-table{width:100%;border-collapse:collapse;font-size:10px;background:white;}.family-table thead{background:#f0f0f0;}.family-table th{padding:6px 4px;text-align:center;font-weight:600;border:1px solid #ddd;color:#333;}.family-table td{padding:5px 4px;text-align:center;border:1px solid #ddd;}.family-table tbody tr:nth-child(even){background:#f9f9f9;}.family-table tfoot tr{font-weight:600;background:#e8e8e8;border:1px solid #999;}.family-table tfoot td{padding:6px 4px;border:1px solid #999;}.family-table tbody td:first-child{text-align:left;}.family-table thead th:first-child{text-align:left;}.footer{text-align:center;margin-top:16px;padding-top:10px;border-top:2px solid #C9A96E;font-size:8px;color:#999;page-break-inside:avoid;}.footer div{margin-bottom:3px;}@media print{*{-webkit-print-color-adjust:exact !important;color-adjust:exact !important;print-color-adjust:exact !important;}body{margin:0;padding:0;background:white;}.page{width:100%;height:auto;margin:0;padding:15mm;box-shadow:none;page-break-after:auto;}}</style></head><body><div class="page"><div class="header"><h1>📋 Walimatul Urus</h1><p>Laporan Daftar Kehadiran Tetamu</p></div><div class="print-date"><strong>Dicetak:</strong> ${printDate}</div><div class="stats-grid"><div class="stat-box"><div class="stat-label">Jumlah Borang</div><div class="stat-value">${totalForms}</div></div><div class="stat-box"><div class="stat-label">Jumlah Kehadiran</div><div class="stat-value">${totalAttendance}</div></div><div class="stat-box"><div class="stat-label">Kapasiti</div><div class="stat-value">${totalAttendanceAll}/${MAX_CAPACITY}</div></div></div><div class="analysis-section"><div class="analysis-section-title">📊 Analisis Keluarga</div>${familyAnalysisHTML}</div>${familySections}<div class="footer"><div>📌 DL=Dewasa Lelaki | KL=Kanak-kanak Lelaki | DP=Dewasa Perempuan | KP=Kanak-kanak Perempuan</div><div>Laporan ini dijanakan secara automatik dari Sistem Walimatul Urus</div></div></div></body></html>`;
+
+      printWindow.document.write(htmlContent);
+      printWindow.document.close();
+      printWindow.focus();
+      setTimeout(() => { printWindow.print(); }, 500);
+    }
+
+    lucide.createIcons();
+  </script>
+ </body>
+</html>
